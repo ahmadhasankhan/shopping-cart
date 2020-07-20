@@ -152,4 +152,19 @@ $ rspec
 $ rspec spec/models/cart_spec.rb 
 ```
 
+## Docker
+
+### Build and Run in docker
+
+```
+$ docker build -t cart .
+
+$ docker run -it --rm cart bundle exec rspec
+
+docker run -itP cart
+```
+
+Run `$ docker ps` to list the running Docker processes.
+
+ 
 
