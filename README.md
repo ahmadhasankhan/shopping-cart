@@ -158,10 +158,15 @@ $ rspec spec/models/cart_spec.rb
 
 ```
 $ docker build -t cart .
-
 $ docker run -it --rm cart bundle exec rspec
+```
 
-docker run -itP cart
+### Use Docker Compose
+```
+$ docker-compose build
+$ docker-compose up
+
+* You should be able to use the app on localhost:3000
 ```
 
 Run `$ docker ps` to list the running Docker processes.
